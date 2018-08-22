@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint-config-airbnb-base"],
+  "rules": {
+    "variable-name": [true, "ban-keywords", "allow-leading-underscore"],
+    "object-shorthand-properties-first": false,
+    "object-literal-sort-keys": false,
+    "no-unused": true
+  }
+}

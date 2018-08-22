@@ -1,0 +1,27 @@
+extend type Query {
+    getNotes: [NotesType]
+
+}
+
+extend type Mutation {
+    createNotes(note:NotesInput): NotesType
+    updateNotes(_id:String!,note:NotesInput): NotesType
+    findNotesById(_id:String!):NotesType
+    deleteNotes(_id:String!):NotesType
+}
+
+input NotesInput {
+    name: String
+    created_at: String
+    updated_at: String
+    deleted_at: String
+}
+
+
+type NotesType {
+    _id:String
+    name: String
+    created_at: String
+    updated_at: String
+    deleted_at: String
+}
